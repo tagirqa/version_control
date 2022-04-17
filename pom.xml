@@ -13,6 +13,8 @@
         <maven.compiler.target>8</maven.compiler.target>
 
         <spring.version>2.6.6</spring.version>
+        <lombok.version>1.18.22</lombok.version>
+        <junit.verstion>4.13.2</junit.verstion>
     </properties>
 
     <dependencies>
@@ -36,8 +38,16 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.22</version>
+            <version>${lombok.version}</version>
             <scope>compile</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.verstion}</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>
